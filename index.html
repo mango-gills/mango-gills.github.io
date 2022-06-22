@@ -216,10 +216,19 @@
 
       <section class="contact-section">
         <h2 class="sub-header">Contact Me</h2>
-        <form id="contact-me">
+        <form
+          id="contact-me"
+          action="https://formsubmit.co/markencinares21@gmail.com"
+          method="POST"
+        >
           <div class="input-container">
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://mango-gills.github.io/"
+            />
           </div>
           <textarea cols="30" rows="10"></textarea>
           <button type="submit">Send Message</button>
