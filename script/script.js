@@ -1,19 +1,24 @@
 const navbar = document.querySelector(".nav-bar");
 const scrollToTopButton = document.querySelector(".scrollToTop");
+let rootElement = document.documentElement;
 
-let lastScrollToTop;
-
-window.addEventListener("scroll", () => {
-  let scrollToTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollToTop > lastScrollToTop) {
-    scrollToTopButton.style.bottom = "50px";
+const handleScroll = () => {
+  let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+  if (rootElement.scrollTop / scrollTotal > 0.1) {
+    //show
+    scrollToTopButton.classList.add("showBtn");
   } else {
-    scrollToTopButton.style.bottom = "-50px";
+    // hide
+    scrollToTopButton.classList.remove("showBtn");
   }
-  lastScrollToTop = scrollToTop;
-});
+};
 
 // return to the top on button click
 scrollToTopButton.addEventListener("click", () => {
-  window.scrollTo(0, 0);
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
+
+document.addEventListener("scroll", handleScroll);

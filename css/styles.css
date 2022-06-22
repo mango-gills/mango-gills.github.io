@@ -416,7 +416,14 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   border-radius: 5px;
+  transform: translateY(100px);
 }
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .scrollToTop:hover {
   background-color: var(--primary-light-color);
   filter: invert();
