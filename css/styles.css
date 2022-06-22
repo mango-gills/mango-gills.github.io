@@ -317,12 +317,22 @@ body {
 }
 
 .project-container div {
-  background-color: #e03f41;
+  padding: 10px;
+  height: 80px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.project-container div h1 {
+  color: var(--secondary-color);
+}
+.project-container div p {
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 .project-container img {
