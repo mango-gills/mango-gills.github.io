@@ -12,4 +12,7 @@ window.addEventListener("scroll", () => {
   lastScrollToTop = scrollToTop;
 });
 
-console.log(navbar);
+window.scrollTo({
+  top: 0,
+  behavior: "smooth",
+});

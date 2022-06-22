@@ -101,6 +101,7 @@ body {
 
 .hero-text {
   display: flex;
+  margin-left: -10px;
 }
 
 .primary-text,
@@ -144,16 +145,28 @@ body {
   }
 }
 
+.about-section,
+.skills {
+  padding: 10px;
+}
+
 .about-section h2 {
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin: 20px 0;
 }
 
 .about-section p {
   margin-bottom: 15px;
-  width: 700px;
-  font-size: 18px;
-  font-weight: 200;
+  width: 800px;
+  font-size: 22px;
+  font-weight: 300;
   line-height: 2.5rem;
+}
+
+.about-text a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Social Links Styles */
@@ -223,4 +236,43 @@ body {
   100% {
     transform: rotate(-359deg);
   }
+}
+
+/* Skills Section */
+
+.skills {
+  margin-top: 100px;
+}
+
+.skills h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.skills ul li {
+  list-style-type: none;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills ul {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.skills ul li img {
+  margin-bottom: 10px;
+  width: 50px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.skills ul li img:hover {
+  transform: scale(1.5);
 }
