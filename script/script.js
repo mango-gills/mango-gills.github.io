@@ -1,15 +1,19 @@
 const navbar = document.querySelector(".nav-bar");
+const scrollToTopButton = document.querySelector(".scrollToTop");
 
 let lastScrollToTop;
 
 window.addEventListener("scroll", () => {
   let scrollToTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollToTop > lastScrollToTop) {
-    navbar.style.top = "-80px";
+    scrollToTopButton.style.bottom = "50px";
   } else {
-    navbar.style.top = "0";
+    scrollToTopButton.style.bottom = "-50px";
   }
   lastScrollToTop = scrollToTop;
 });
 
-console.log(navbar);
+// return to the top on button click
+scrollToTopButton.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
