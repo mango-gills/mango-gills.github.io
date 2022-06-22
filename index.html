@@ -39,17 +39,20 @@
 
     <div class="main-container">
       <div class="nav-bar">
-        <h1>Mango Devs | <span>Full Stack Web Developer</span></h1>
+        <h1>
+          <a href="#" id="home">Mango Devs </a>|
+          <span>Full Stack Web Developer</span>
+        </h1>
         <div class="nav-links">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects-section">Projects</a></li>
           </ul>
-          <button type="submit">Contact</button>
+          <a href="#contact-me" id="contact-link">Contact</a>
         </div>
       </div>
 
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="hero-text">
           <div class="primary-text">
             <h1 style="--i: 1">H</h1>
@@ -69,7 +72,7 @@
         </div>
 
         <div class="about-text">
-          <h2>I, Me, Mine</h2>
+          <h2 class="sub-header">I, Me, Mine</h2>
           <p>
             Hello there! My name is Mark Christian Encinares, aiming to be a
             good Full Stack Web Developer, I can make fast and responsive web
@@ -84,7 +87,7 @@
 
       <!-- Skills Section -->
       <section class="skills">
-        <h2>Tech Stack</h2>
+        <h2 class="sub-header">Tech Stack</h2>
         <p>
           Is it me you're looking for? Working knowledge on the following
           programming languages, technologies and tools. Improving slowly but
@@ -184,8 +187,8 @@
         </ul>
       </section>
 
-      <section class="projects">
-        <h2>My Projects</h2>
+      <section class="projects" id="projects-section">
+        <h2 class="sub-header">My Projects</h2>
         <div class="projects-gallery">
           <div class="project-container">
             <img src="images/staticweb-home.png" alt="" />
@@ -212,7 +215,7 @@
       </section>
 
       <section class="contact-section">
-        <h2>Contact Me</h2>
+        <h2 class="sub-header">Contact Me</h2>
         <form id="contact-me">
           <div class="input-container">
             <input type="text" placeholder="Name" required />
@@ -222,14 +225,22 @@
           <button type="submit">Send Message</button>
         </form>
       </section>
-
       <footer>Mango Devs - &copy Copyright 2022</footer>
     </div>
 
-    <div class="bg-objects">
-      <!-- <i class="fa-solid fa-circle-nodes"></i> -->
-      <!-- <i class="fa-solid fa-gear"></i> -->
+    <div onclick="scrollToTop()" class="scrollToTop">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path
+          d="M54.63 246.6L192 109.3l137.4 137.4C335.6 252.9 343.8 256 352 256s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25l-160-160c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25S42.13 259.1 54.63 246.6zM214.6 233.4c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0L192 301.3l137.4 137.4C335.6 444.9 343.8 448 352 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L214.6 233.4z"
+          fill="#24222c"
+        />
+      </svg>
     </div>
+    <!-- <div class="bg-objects">
+      <i class="fa-solid fa-circle-nodes"></i>
+      <i class="fa-solid fa-gear"></i>
+  </div> -->
 
     <!-- Initialize external script -->
     <script src="script/script.js"></script>
