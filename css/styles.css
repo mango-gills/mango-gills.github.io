@@ -135,7 +135,7 @@ body {
   margin-left: -10px;
 }
 
-.hero-text h1:nth-child(3) {
+.primary-text h1:nth-child(3) {
   padding-right: 15px;
 }
 
@@ -330,6 +330,7 @@ body {
 .project-container div h1 {
   color: var(--secondary-color);
 }
+
 .project-container div p {
   margin-top: 5px;
   font-size: 14px;
