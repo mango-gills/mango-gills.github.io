@@ -373,6 +373,8 @@ footer {
 }
 
 #contact-me input {
+  color: var(--primary-dark-bg);
+  font-weight: bold;
   width: 50%;
   height: 40px;
   border-radius: 5px;
@@ -381,8 +383,20 @@ footer {
   padding: 10px;
 }
 
+#contact-me input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#contact-me input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 #contact-me textarea {
+  color: var(--primary-dark-bg);
   font-size: 16px;
+  font-weight: bold;
   padding: 10px;
   margin: 5px 10px 5px 0;
   border-radius: 5px;
@@ -555,6 +569,13 @@ footer {
 
   .project-container {
     height: 200px;
+  }
+
+  .project-container h1 {
+    font-size: 16px;
+  }
+  .project-container div p {
+    font-size: 12px;
   }
 
   #contact-me {
