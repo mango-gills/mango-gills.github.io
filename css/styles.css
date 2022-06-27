@@ -288,7 +288,7 @@ body {
 
 .skills ul li img {
   margin: 20px 0;
-  width: 60px;
+  width: 50px;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -315,6 +315,7 @@ body {
   /* border: 1px solid white; */
   overflow: hidden;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .project-container div {
@@ -342,7 +343,6 @@ body {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
-  cursor: pointer;
 }
 
 .project-container img:hover {
