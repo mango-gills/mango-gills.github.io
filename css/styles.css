@@ -596,13 +596,18 @@ footer {
   }
 
   .social-links {
-    top: 85%;
+    top: 82%;
     z-index: 3;
   }
 
   .social-links ul {
     display: flex;
     flex-direction: row;
+  }
+
+  .social-links i {
+    font-size: 20px;
+    margin: 15px 10px;
   }
 
   .skills {
@@ -777,6 +782,10 @@ footer {
   .skills:nth-child(3) {
     font-size: 14px;
     line-height: 1.5;
+  }
+
+  .skills ul {
+    margin: 10px 0;
   }
 
   .skills ul li {
