@@ -582,8 +582,14 @@ footer {
     margin: 0 auto;
   }
 
-  .hero-text h1 {
-    font-size: 60px;
+  .primary-text h1,
+  .secondary-text h1 {
+    font-size: 90px;
+    text-shadow: 3px 0px 0px var(--secondary-color);
+  }
+
+  .hero-text h1:hover {
+    text-shadow: 3px 0px 0px var(--primary-light-color);
   }
 
   .about-text h2 {
@@ -743,8 +749,14 @@ footer {
     margin: 0 auto;
   }
 
-  .hero-text h1 {
-    font-size: 45px;
+  .primary-text h1,
+  .secondary-text h1 {
+    font-size: 52px;
+    text-shadow: 3px 0px 0px var(--secondary-color);
+  }
+
+  .hero-text h1:hover {
+    text-shadow: 3px 0px 0px var(--primary-light-color);
   }
 
   .about-text h2 {
