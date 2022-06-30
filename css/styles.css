@@ -704,11 +704,11 @@ footer {
   }
 
   .nav-bar h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .nav-bar h1 span {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .mobile-flex {
@@ -728,9 +728,9 @@ footer {
   }
 
   .nav-links #contact-link {
-    height: 30px;
+    height: 25px;
     width: 85px;
-    padding: 4px 9px;
+    padding: 2px 10px;
   }
 
   .about-section {
@@ -739,16 +739,16 @@ footer {
   }
 
   .hero-text h1 {
-    font-size: 60px;
+    font-size: 45px;
   }
 
   .about-text h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .about-text p {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .social-links {
@@ -766,6 +766,14 @@ footer {
     margin: 0 auto;
   }
 
+  .skills h2 {
+    font-size: 25px;
+  }
+
+  .skills p {
+    font-size: 12px;
+  }
+
   .skills:nth-child(3) {
     font-size: 14px;
     line-height: 1.5;
@@ -776,6 +784,7 @@ footer {
   }
 
   .skills ul li img {
+    margin: 10px 0;
     height: 30px;
   }
 
@@ -789,6 +798,11 @@ footer {
 
   .projects {
     margin: 20px 0;
+  }
+
+  .sub-header {
+    font-size: 25px;
+    margin: 0;
   }
 
   .projects-gallery {
