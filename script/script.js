@@ -37,7 +37,6 @@ closeModal.addEventListener("click", () => {
 });
 
 projectContainer.forEach((project) => {
-  console.log(project);
   project.addEventListener("click", () => {
     modal.style.visibility = "visible";
     projectTitle.innerText = project.getElementsByTagName("h1")[0].innerText;
@@ -49,6 +48,10 @@ projectContainer.forEach((project) => {
       project.getElementsByTagName("h1")[0].classList.contains("dynamic")
     ) {
       modalText.innerText = descriptions.dynamic;
+    } else if (
+      project.getElementsByTagName("h1")[0].classList.contains("react")
+    ) {
+      modalText.innerText = descriptions.react;
     } else if (
       project.getElementsByTagName("h1")[0].classList.contains("fullstack")
     ) {
@@ -67,11 +70,14 @@ window.onclick = function (event) {
 
 //
 const descriptions = {
-  static: "A static web portfolio made with HTML & CSS.",
+  static:
+    "Project 1 - A static web portfolio made with HTML & CSS with responsive mobile layout.",
   dynamic:
-    "Who wants to be a millionaire web game made in HTML, CSS and JavaScript. First team collaboration.",
+    "Project 2 - Game made in HTML, CSS and JavaScript - inspired by 'Who Wants to Be a Millionaire?'. First project working with a team.",
+  react:
+    "Project 3 - E-commerce website made with React for frontend and uses the Fake store rest API.",
   fullstack:
-    "Food blogging web app, with CRUD functionality made with MERN Stack.",
+    "Project 4 - Full stack food blogging website made with React for frontend, NodeJS & Express for backend and MongoDB as database.",
   final:
-    "Chat application using ReactJS for front-end and Firebase for the backend. Features sending text and images, searching and adding users.",
+    "Project 5 - Chat application using ReactJS for frontend and Firebase for the backend. Features sending text and images, searching and adding users. Email/Password registration or Google Signin. Group project and team divided for frontend and backend tasks.",
 };
