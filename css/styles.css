@@ -104,6 +104,11 @@ body {
   transition: 0.3s;
 }
 
+.nav-links #contact-link:hover {
+  color: var(--secondary-color);
+  background: var(--primary-light-color);
+}
+
 .nav-links button:hover {
   background: var(--primary-light-color);
   color: var(--secondary-color);
