@@ -33,12 +33,14 @@ document.addEventListener("scroll", handleScroll);
 
 closeModal.addEventListener("click", () => {
   modal.style.visibility = "hidden";
+  modal.style.opacity = 0;
   document.body.style.overflowY = "scroll";
 });
 
 projectContainer.forEach((project) => {
   project.addEventListener("click", () => {
     modal.style.visibility = "visible";
+    modal.style.opacity = 1;
     projectTitle.innerText = project.getElementsByTagName("h1")[0].innerText;
     modalImage.src = project.getElementsByTagName("img")[0].src;
 
@@ -65,6 +67,7 @@ projectContainer.forEach((project) => {
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.visibility = "hidden";
+    modal.style.opacity = 0;
   }
 };
 
