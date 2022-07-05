@@ -362,7 +362,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: 4;
   display: flex;
   align-items: center;
@@ -374,7 +374,7 @@ body {
   border-radius: 10px;
   color: #e03f41;
   width: 900px;
-  height: 500px;
+  height: 540px;
   margin: 0 auto;
   box-shadow: -2px 4px 50px -2px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: -2px 4px 17px 0px rgba(0, 0, 0, 0.5);
@@ -422,6 +422,15 @@ body {
 
 .modal-description p {
   margin: 20px;
+}
+
+.modal-body .modal-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-body .modal-buttons button {
+  margin: 0 20px;
 }
 
 .close-modal svg {
@@ -485,7 +494,8 @@ footer {
   resize: none;
 }
 
-#contact-me button {
+#contact-me button,
+.modal-buttons button {
   color: var(--primary-light-color);
   background: var(--secondary-color);
   border: none;
@@ -499,7 +509,8 @@ footer {
   transition: 0.1s ease-in;
 }
 
-#contact-me button:active {
+#contact-me button:active,
+.modal-buttons button:active {
   transform: translate(-3px, 3px);
   box-shadow: -1.5px 1.5px 0px 0px var(--primary-light-color);
 }
