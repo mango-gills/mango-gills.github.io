@@ -54,16 +54,24 @@ projectContainer.forEach((project) => {
       project.getElementsByTagName("h1")[0].classList.contains("dynamic")
     ) {
       modalText.innerText = descriptions.dynamic;
+      idLink.href = "#";
+      codeLink.href = "#";
     } else if (
       project.getElementsByTagName("h1")[0].classList.contains("react")
     ) {
       modalText.innerText = descriptions.react;
+      idLink.href = "#";
+      codeLink.href = "#";
     } else if (
       project.getElementsByTagName("h1")[0].classList.contains("fullstack")
     ) {
       modalText.innerText = descriptions.fullstack;
+      idLink.href = "#";
+      codeLink.href = "#";
     } else {
       modalText.innerText = descriptions.final;
+      idLink.href = "#";
+      codeLink.href = "#";
     }
   });
 });
