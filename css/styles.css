@@ -429,8 +429,10 @@ body {
   justify-content: center;
 }
 
-.modal-body .modal-buttons button {
+.modal-body .modal-buttons a {
+  text-decoration: none;
   margin: 0 20px;
+  padding: 10px 15px;
 }
 
 .close-modal svg {
@@ -495,7 +497,7 @@ footer {
 }
 
 #contact-me button,
-.modal-buttons button {
+.modal-buttons a {
   color: var(--primary-light-color);
   background: var(--secondary-color);
   border: none;
@@ -510,7 +512,7 @@ footer {
 }
 
 #contact-me button:active,
-.modal-buttons button:active {
+.modal-buttons a:active {
   transform: translate(-3px, 3px);
   box-shadow: -1.5px 1.5px 0px 0px var(--primary-light-color);
 }

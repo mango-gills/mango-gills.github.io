@@ -7,6 +7,8 @@ const projectContainer = document.querySelectorAll(".project-container");
 const projectTitle = document.querySelector(".project-title");
 const modalImage = document.getElementById("modal-image");
 const modalText = document.querySelector(".modal-text");
+const idLink = document.getElementById("demo");
+const codeLink = document.getElementById("code");
 
 let rootElement = document.documentElement;
 
@@ -46,6 +48,8 @@ projectContainer.forEach((project) => {
 
     if (project.getElementsByTagName("h1")[0].classList.contains("static")) {
       modalText.innerText = descriptions.static;
+      idLink.href = "https://mango-gills.github.io/Static-Website/";
+      codeLink.href = "https://github.com/mango-gills/Static-Website";
     } else if (
       project.getElementsByTagName("h1")[0].classList.contains("dynamic")
     ) {
