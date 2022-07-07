@@ -60,8 +60,8 @@ projectContainer.forEach((project) => {
       project.getElementsByTagName("h1")[0].classList.contains("react")
     ) {
       modalText.innerText = descriptions.react;
-      demoLink.href = "#";
-      codeLink.href = "#";
+      demoLink.href = "https://shappy-mango-gills.vercel.app/";
+      codeLink.href = "https://github.com/mango-gills/Shappy";
     } else if (
       project.getElementsByTagName("h1")[0].classList.contains("fullstack")
     ) {
