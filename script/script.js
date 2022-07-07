@@ -67,7 +67,7 @@ projectContainer.forEach((project) => {
     ) {
       modalText.innerText = descriptions.fullstack;
       demoLink.href = "#";
-      codeLink.href = "#";
+      codeLink.href = "https://github.com/mango-gills/foodStreet";
     } else {
       modalText.innerText = descriptions.final;
       idLink.href = "#";
