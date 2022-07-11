@@ -403,17 +403,56 @@ body {
 }
 
 .modal-gallery {
-  width: 100%;
+  width: 80%;
   height: 80%;
+  margin: 10px auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
-.modal-gallery img {
-  margin: 10px 0;
-  width: 80%;
+.modal-gallery .slide{
+  width: 100%;
+  max-width: 800px;
   height: 350px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.modal-gallery .slide img {
+  margin: 10px auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 45%;
+  left: 20%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 20%;
 }
 
 .modal-description {
