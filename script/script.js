@@ -69,8 +69,8 @@ projectContainer.forEach((project) => {
       project.getElementsByTagName("h1")[0].classList.contains("dynamic")
     ) {
       modalText.innerText = descriptions.dynamic;
-      demoLink.href = "#";
-      codeLink.href = "#";
+      demoLink.href = "https://yel-vab.github.io/WWTBAM-browser-game/";
+      codeLink.href = "https://github.com/yel-vab/WWTBAM-browser-game";
 
       getImages(2);
     } else if (
