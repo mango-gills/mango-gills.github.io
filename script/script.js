@@ -91,7 +91,7 @@ projectContainer.forEach((project) => {
       getImages(4);
     } else {
       modalText.innerText = descriptions.final;
-      demoLink.href = "#";
+      demoLink.href = "https://chapp-sigma.vercel.app/";
       codeLink.href = "https://github.com/mango-gills/final-project_group-2";
 
       getImages(5);
