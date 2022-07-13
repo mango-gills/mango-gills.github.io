@@ -85,7 +85,7 @@ projectContainer.forEach((project) => {
       project.getElementsByTagName("h1")[0].classList.contains("fullstack")
     ) {
       modalText.innerText = descriptions.fullstack;
-      demoLink.href = "#";
+      demoLink.href = "https://food-street.vercel.app/";
       codeLink.href = "https://github.com/mango-gills/foodStreet";
 
       getImages(4);
